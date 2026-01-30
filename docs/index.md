@@ -1,6 +1,6 @@
 # Welcome to Stunning Innovation
 
-![Hero Image](images/hero-home.svg){ .hero-image loading=lazy }
+![Welcome banner with purple gradient background displaying 'Welcome Home' and 'Knowledge Sharing Platform'](images/hero-home.svg){ .hero-image loading=lazy }
 
 ## Knowledge Sharing Platform
 

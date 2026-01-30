@@ -1,6 +1,6 @@
 # Contact Us
 
-![Contact Hero](images/hero-contact.svg){ .hero-image loading=lazy }
+![Contact page banner with blue gradient background displaying 'Contact Us' and 'Get in Touch'](images/hero-contact.svg){ .hero-image loading=lazy }
 
 ## Get in Touch
 
@@ -69,17 +69,17 @@ Use the form below to send us a message directly:
 <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
   <div class="form-group">
     <label for="name">Name *</label>
-    <input type="text" id="name" name="name" required aria-required="true" placeholder="Your name">
+    <input type="text" id="name" name="name" required aria-required="true" placeholder="Your name" autocomplete="name">
   </div>
   
   <div class="form-group">
     <label for="email">Email *</label>
-    <input type="email" id="email" name="email" required aria-required="true" placeholder="your.email@example.com">
+    <input type="email" id="email" name="email" required aria-required="true" placeholder="your.email@example.com" autocomplete="email">
   </div>
   
   <div class="form-group">
     <label for="subject">Subject *</label>
-    <input type="text" id="subject" name="subject" required aria-required="true" placeholder="What is this about?">
+    <input type="text" id="subject" name="subject" required aria-required="true" placeholder="What is this about?" autocomplete="off">
   </div>
   
   <div class="form-group">

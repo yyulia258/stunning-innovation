@@ -1,4 +1,5 @@
-<svg width="1200" height="400" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="hero-contact-title">
+  <title id="hero-contact-title">Contact Us - Get in Touch banner with blue gradient background</title>
   <defs>
     <linearGradient id="contactGradient" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />

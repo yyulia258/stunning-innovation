@@ -1,6 +1,6 @@
 # Blog
 
-![Blog Hero](../images/hero-blog.svg){ .hero-image loading=lazy }
+![Blog banner with pink-to-red gradient background displaying 'Blog' and 'Insights and Updates'](../images/hero-blog.svg){ .hero-image loading=lazy }
 
 ## Insights and Updates
 
