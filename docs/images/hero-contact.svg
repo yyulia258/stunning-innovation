@@ -1,0 +1,12 @@
+<svg width="1200" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="hero-contact-title">
+  <title id="hero-contact-title">Contact Us - Get in Touch banner with blue gradient background</title>
+  <defs>
+    <linearGradient id="contactGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="400" fill="url(#contactGradient)"/>
+  <text x="600" y="200" font-family="Arial, sans-serif" font-size="60" fill="white" text-anchor="middle" font-weight="bold">Contact Us</text>
+  <text x="600" y="260" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle" opacity="0.9">Get in Touch</text>
+</svg>

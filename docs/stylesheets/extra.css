@@ -1,0 +1,199 @@
+/* Gradient theme and custom styling */
+
+:root {
+  --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  --gradient-accent: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+/* Hero image styling */
+.hero-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.85) 0%, rgba(118, 75, 162, 0.85) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Gradient accents for headers */
+.md-typeset h1 {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: #667eea; /* Fallback for browsers that don't support background-clip: text */
+  font-weight: bold;
+}
+
+/* Ensure text remains visible when colors are overridden */
+@media (prefers-contrast: high) {
+  .md-typeset h1 {
+    background: none;
+    -webkit-text-fill-color: inherit;
+    color: inherit;
+  }
+}
+
+/* Button styling with gradient */
+.md-button--primary {
+  background: var(--gradient-primary) !important;
+  border: none;
+}
+
+/* Card styling for blog posts */
+.blog-card {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark mode adjustments */
+[data-md-color-scheme="slate"] .blog-card {
+  border-color: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+}
+
+[data-md-color-scheme="slate"] .hero-image {
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+/* Contact form styling */
+.contact-form {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+[data-md-color-scheme="slate"] .form-group input,
+[data-md-color-scheme="slate"] .form-group textarea {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.submit-button {
+  background: var(--gradient-primary);
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.submit-button:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .hero-image {
+    height: 250px;
+  }
+  
+  .hero-overlay {
+    font-size: 2rem;
+  }
+  
+  .md-typeset h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-image {
+    height: 200px;
+  }
+  
+  .hero-overlay {
+    font-size: 1.5rem;
+  }
+}
+
+/* Accessibility improvements */
+.hero-overlay,
+.submit-button,
+.blog-card {
+  transition: all 0.3s ease;
+}
+
+.submit-button:focus,
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: 3px solid #667eea;
+  outline-offset: 2px;
+}
+
+/* Skip to main content link for screen readers */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #667eea;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
