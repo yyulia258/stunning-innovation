@@ -1,6 +1,7 @@
 # Stunning Innovation
 
 A modern, responsive knowledge sharing platform built with MkDocs and Material theme.
+https://yyulia258.github.io/stunning-innovation/
 
 ## Features
 
